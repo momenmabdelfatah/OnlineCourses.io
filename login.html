@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="png" href="images/icon/FAV.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Login & Register</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="images/icon/LOGO.png" alt="Online Courses Logo"></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="instructor.html">Monitor </a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="index.html#services_section">Services</a></li>
+            <li><a href="index.html#contactus_section">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <div class="form" id="login-form">
+                <h2>Login</h2>
+                <form action="#">
+                    <input type="email" placeholder="Email" required aria-label="Email">
+                    <input type="password" placeholder="Password" required aria-label="Password">
+                    <button type="submit">Login</button>
+                    <p class="toggle"><a href="#" onclick="registerForm()">Create New Account</a></p>
+                    <p class="toggle"><a href="#" onclick="forgotPassword()">Forgot your password?</a></p>
+                </form>
+            </div>
+
+            <div class="form" id="forgot-password-form">
+                <h2>Forgot Password</h2>
+                <form action="#">
+                    <input type="email" placeholder="Enter your email" required aria-label="Email">
+                    <button type="submit">Submit</button>
+                    <p class="toggle"><a href="#" onclick="backToLogin()">Back to Login</a></p>
+                </form>
+            </div>
+
+            <div class="form" id="register-form">
+                <h2>Register</h2>
+                <form action="#">
+                    <input type="text" placeholder="Full Name" required aria-label="Full Name">
+                    <input type="email" placeholder="Email" required aria-label="Email">
+                    <input type="password" placeholder="Password" required aria-label="Password">
+                    <input type="password" placeholder="Confirm Password" required aria-label="Confirm Password">
+                    <button type="submit">Register</button>
+                    <p class="toggle"><a href="#" onclick="backToLogin()">Back to Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
